@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.test{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 4vh;
+}
+.container label div{
+    width: 40px;
+    height: 40px;
+    border: solid;
+    background-color: aqua;
+    border-radius: 50%;
+    margin-top: 30vh;
+
+}
+.container label:hover div{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.container input{
+    display: none;
+}
+
+.container input:checked ~ div{
+    background-color: red;
+}
